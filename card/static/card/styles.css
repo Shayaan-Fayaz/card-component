@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
 
 img {
     width: 100%;
@@ -13,11 +14,19 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 
+h1{
+    text-align: center;
+    font-weight: 1.6em;
+    margin-bottom: 0;
+    font-family: 'Bungee Inline', cursive;
+    margin-top: 0;
+}
+
 #container {
     display: inline-block;
     max-width: 300px;
     margin: 0 auto;
-    margin-top: 20vh;
+    margin-top: 15vh;
     margin-right: 10px;
     margin-left: 10px;
 }
