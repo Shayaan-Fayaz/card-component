@@ -1,0 +1,32 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOSC Card</title>
+    <link rel="stylesheet" href="{% static 'card/styles.css' %}">
+</head>
+<body>
+    {% for member in team_members %}
+    <div id="container">
+        <div class="card">
+            <img src="{{ member.img }}" alt="{{ member.name }}" id="member-photo">
+
+            <div class="card__detils">
+            <span class="tag">{{ member.roles }}</span>
+            <!-- <span class="tag">Statue</span> -->
+            <div class="name">{{member.name}}</div>
+
+            <a href="{{ member.github_link }}"><img src="{% static 'card/github-mark.png' %}" alt="Github" id="logo"></a>
+            
+            <a href="{{ member.github_link }}" class="my-github-link"><button>My Github</button></a>
+
+            </div>
+
+        </div>
+    </div>
+    {% endfor %}
+</body>
+</html>
