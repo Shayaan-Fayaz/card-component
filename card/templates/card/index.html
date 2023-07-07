@@ -9,7 +9,13 @@
     <link rel="stylesheet" href="{% static 'card/styles.css' %}">
 </head>
 <body>
+    <div class="fixed">
+        <img src="{% static 'card/logo_grad.png' %}" alt="SOSC logo" class="sosc_logo">
+    </div>
+    
+    <div class="logo_and_heading">
     <h1>SOSC Core Members</h1>
+</div>
     {% for member in team_members %}
     <div id="container">
         <div class="card">

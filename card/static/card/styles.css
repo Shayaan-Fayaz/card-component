@@ -1,25 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
 img {
     width: 100%;
     border-radius: 12px;
     height: 214px;
     object-fit: cover;
-
 }
 
+
+.fixed{
+    position: fixed;
+    z-index: 1;
+    top: 30px;
+    left: 25px;
+}
+
+
 body{
-    background-color: #EAEFF1;
+    background-color: rgb(36, 36, 36);
     font-family: 'Raleway', sans-serif;
 }
 
+.logo_and_heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.sosc_logo{
+    display: inline;
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.sosc_logo:hover{
+    transform: scale(1.1);
+    /* filter: grayscale(0) saturate(100%) brightness(120%) hue-rotate(0deg); */
+}
+
 h1{
+    display: inline;
+    color: whitesmoke;
     text-align: center;
     font-weight: 1.6em;
     margin-bottom: 0;
-    font-family: 'Bungee Inline', cursive;
+    font-family: 'Poppins', sans-serif;
     margin-top: 0;
+    transition: transform 0.3s ease;
+}
+
+h1:hover{
+    transform: scale(1.1);
+    color: rgb(247, 78, 161);
 }
 
 #container {
@@ -32,19 +69,25 @@ h1{
 }
 
 .card{
-    background-color: white;
+    background: linear-gradient(45deg, #007aff,pink, rgb(247, 78, 161));
+    background-color: #fff;
     padding: 8px;
     border-radius: 12px;
     border: 1px solid #BACDD8;
+    transition: transform 0.3s ease;
+    border: 0.5px solid rgb(247, 78, 161);
 }
 
+.card:hover{
+    transform: scale(1.1);
+}
 .tag{
     padding: 4px 8px;
-    border: 1px solid #E5EAED;
+    border: 1px solid #333;
     border-radius: 50px;
     font-size: 12px;
     font-weight: 600;
-    color: #788697;
+    color: #333;
     display: flex;
     justify-content: center;
 
@@ -66,13 +109,13 @@ p{
 }
 
 button{
-    border: none;
+    border: 0.1rem solid rgb(247, 78, 161);
     padding: 12px 24px;
     border-radius: 50px;
 
     font-weight: 600;
-    color: #0077FF;
-    background-color: #E0EFFF;
+    color: rgb(247, 78, 161);
+    background-color: whitesmoke;
 
     margin: 0 auto;
     display: block;
@@ -81,13 +124,16 @@ button{
 }
 
 button:focus, button:hover{
-    background-color: #0077FF;
-    color: #E0EFFF;
+    background-color: rgb(247, 78, 161);
+    color: whitesmoke;
 }
 
 
 .card__details {
     padding: 16px 8px 8px 8px;
+    background: pink;
+  background-image: linear-gradient(to right, pink, rgb(247, 78, 161));
+  color: white;
 }
 
 #logo{
