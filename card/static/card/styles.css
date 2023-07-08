@@ -22,14 +22,53 @@ body{
     background-color: rgb(36, 36, 36);
     font-family: 'Raleway', sans-serif;
 }
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 40px 100px; */
+}
 
 .logo_and_heading{
+    background-color: #111;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
+    align-items: flex-end;
+    box-shadow: 0px 7px 6px rgb(247, 78, 161);
+    text-shadow: 2px 4px 4px rgb(247, 78, 161);
 }
+
+.sosc_heading{
+    align-self: center;
+}
+
+
+.toggle{
+    width: 60px;
+  height: 60px;
+    background: url(https://i.ibb.co/HrfVRcx/menu.png);
+    background-repeat: no-repeat;
+    align-self: flex-end;
+    position: absolute;
+    bottom: 570px;
+}
+
+.toggle.active
+{
+  background: url(https://i.ibb.co/rt3HybH/close.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  /* background-position: center; */
+  cursor: pointer;
+}
+
+.showcase.active{
+    right: 300px;
+}
+
 
 .sosc_logo{
     display: inline;
@@ -48,10 +87,11 @@ h1{
     color: whitesmoke;
     text-align: center;
     font-weight: 1.6em;
-    margin-bottom: 0;
+    margin-bottom: 20px;
     font-family: 'Poppins', sans-serif;
-    margin-top: 0;
+    margin-top: 30px;
     transition: transform 0.3s ease;
+    font-size: 3em;
 }
 
 h1:hover{

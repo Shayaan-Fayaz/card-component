@@ -7,15 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOSC Card</title>
     <link rel="stylesheet" href="{% static 'card/styles.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="fixed">
         <img src="{% static 'card/logo_grad.png' %}" alt="SOSC logo" class="sosc_logo">
     </div>
-    
+    <section class="showcase">
+    <header>
     <div class="logo_and_heading">
-    <h1>SOSC Core Members</h1>
+    <h1 class="sosc_heading">SOSC Core Members</h1>
+    <div class="toggle active"></div>
 </div>
+</header>
     {% for member in team_members %}
     <div id="container">
         <div class="card">
@@ -27,6 +31,7 @@
             <div class="name">{{member.name}}</div>
 
             <a href="{{ member.github_link }}"><img src="{% static 'card/github-mark.png' %}" alt="Github" id="logo"></a>
+            <!-- <a href="{{ member.github_link }}" class='logo_github'><i class="fa-brands fa-github"></i></a> -->
             
             <a href="{{ member.github_link }}" class="my-github-link"><button>My Github</button></a>
 
@@ -35,5 +40,19 @@
         </div>
     </div>
     {% endfor %}
+
+</section>
+
+
+    <div class="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Events</a></li>
+        </ul>
+      </div>
+    <script src="{% static 'card/first.js'}"></script>
 </body>
 </html>
