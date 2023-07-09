@@ -1,3 +1,79 @@
+<!-- {% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOSC Card</title>
+    <link rel="stylesheet" href="{% static 'card/styles.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+<!-- </head>
+<body>
+    <div class="fixed">
+        <img src="{% static 'card/logo_grad.png' %}" alt="SOSC logo" class="sosc_logo">
+    </div>
+    <section id="myShowcase" class="showcase active">
+    <header>
+    <div class="logo_and_heading">
+    <h1 class="sosc_heading">SOSC Core Members</h1>
+    <div class="toggle" onclick='myFunction(this)'>
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+</div>
+</header>
+    {% for member in team_members %}
+    <div id="container {{ forloop.counter }}">
+        <div class="card">
+            <img src="{{ member.img }}" alt="{{ member.name }}" id="member-photo">
+
+            <div class="card__detils">
+            <span class="tag">{{ member.roles }}</span>
+            <span class="tag">Statue</span> -->
+            <!-- <div class="name">{{member.name}}</div>
+
+            <a href="{{ member.github_link }}"><img src="{% static 'card/github-mark.png' %}" alt="Github" id="logo"></a> -->
+            <!-- <a href="{{ member.github_link }}" class='logo_github'><i class="fa-brands fa-github"></i></a> -->
+            
+            <!-- <a href="{{ member.github_link }}" class="my-github-link"> -->
+            <!-- <button class="modalBtn">More About Me</button> -->
+            <!-- </a> -->
+
+            <!-- <div class="member-modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="{{ member.img }}" alt="{{ member.name }}">
+                    <div class="tag">{{ member.roles }}</div>
+                    <div class="name">{{ memebr.name }}</div>
+                    <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sit quibusdam adipisci repudiandae, delectus, officia atque aut deserunt ab ducimus mollitia ipsam, culpa quo quae quis nam dicta eveniet. Alias.</div>
+                </div>
+            </div>
+
+            </div>
+
+        </div>
+    </div>
+    {% endfor %}
+
+</section>
+
+
+    <div id="myMenu" class="menu" onclick="openNav()"> -->
+        <!-- <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Events</a></li>
+        </ul>
+      </div>
+    <script src="{% static 'card/first.js' %}"></script>
+</body>
+</html> -->
+
 {% load static %}
 
 <!DOCTYPE html>
@@ -17,7 +93,6 @@
     <header>
     <div class="logo_and_heading">
     <h1 class="sosc_heading">SOSC Core Members</h1>
-    <div class="toggle active"></div>
 </div>
 </header>
     {% for member in team_members %}
@@ -43,16 +118,5 @@
 
 </section>
 
-
-    <div class="menu">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Events</a></li>
-        </ul>
-      </div>
-    <script src="{% static 'card/first.js'}"></script>
 </body>
 </html>
