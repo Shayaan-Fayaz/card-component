@@ -46,28 +46,6 @@ body{
 }
 
 
-.toggle{
-    width: 60px;
-  height: 60px;
-    background: url(https://i.ibb.co/HrfVRcx/menu.png);
-    background-repeat: no-repeat;
-    align-self: flex-end;
-    position: absolute;
-    bottom: 570px;
-}
-
-.toggle.active
-{
-  background: url(https://i.ibb.co/rt3HybH/close.png);
-  background-repeat: no-repeat;
-  background-size: 25px;
-  /* background-position: center; */
-  cursor: pointer;
-}
-
-.showcase.active{
-    right: 300px;
-}
 
 
 .sosc_logo{
@@ -165,7 +143,7 @@ button{
 
 button:focus, button:hover{
     background-color: rgb(247, 78, 161);
-    color: whitesmoke;
+    color: rgb(30, 48, 80);
 }
 
 
@@ -183,6 +161,7 @@ button:focus, button:hover{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .my-github-link{
